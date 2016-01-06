@@ -1,0 +1,85 @@
+{
+  "name": "readable-stream",
+  "version": "2.0.5",
+  "description": "Streams3, a user-land copy of the stream library from iojs v2.x",
+  "main": "readable.js",
+  "devDependencies": {
+    "tap": "~0.2.6",
+    "tape": "~4.0.0",
+    "zuul": "~3.0.0"
+  },
+  "scripts": {
+    "test": "tap test/parallel/*.js",
+    "browser": "npm run write-zuul && zuul -- test/browser.js",
+    "write-zuul": "printf \"ui: tape\nbrowsers:\n  - name: $BROWSER_NAME\n    version: $BROWSER_VERSION\n\">.zuul.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nodejs/readable-stream.git"
+  },
+  "keywords": [
+    "readable",
+    "stream",
+    "pipe"
+  ],
+  "browser": {
+    "util": false
+  },
+  "license": "MIT",
+  "gitHead": "a4f23d8e451267684a8160679ce16e16149fe72b",
+  "bugs": {
+    "url": "https://github.com/nodejs/readable-stream/issues"
+  },
+  "homepage": "https://github.com/nodejs/readable-stream#readme",
+  "_id": "readable-stream@2.0.5",
+  "_shasum": "a2426f8dcd4551c77a33f96edf2886a23c829669",
+  "_from": ".",
+  "_npmVersion": "3.3.12",
+  "_nodeVersion": "5.1.1",
+  "_npmUser": {
+    "name": "cwmma",
+    "email": "calvin.metcalf@gmail.com"
+  },
+  "dist": {
+    "shasum": "a2426f8dcd4551c77a33f96edf2886a23c829669",
+    "tarball": "http://registry.npmjs.org/readable-stream/-/readable-stream-2.0.5.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "isaacs",
+      "email": "isaacs@npmjs.com"
+    },
+    {
+      "name": "tootallnate",
+      "email": "nathan@tootallnate.net"
+    },
+    {
+      "name": "rvagg",
+      "email": "rod@vagg.org"
+    },
+    {
+      "name": "cwmma",
+      "email": "calvin.metcalf@gmail.com"
+    }
+  ],
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "map": {
+    "util": "@empty"
+  },
+  "registry": "npm",
+  "dependencies": {
+    "core-util-is": "core-util-is@~1.0.0",
+    "inherits": "inherits@~2.0.1",
+    "isarray": "isarray@0.0.1",
+    "process-nextick-args": "process-nextick-args@~1.0.6",
+    "string_decoder": "string_decoder@~0.10.0",
+    "util-deprecate": "util-deprecate@~1.0.1",
+    "process": "github:jspm/nodelibs-process@^0.1.0",
+    "buffer": "github:jspm/nodelibs-buffer@^0.1.0",
+    "events": "github:jspm/nodelibs-events@^0.1.0",
+    "util": "github:jspm/nodelibs-util@^0.1.0"
+  }
+}

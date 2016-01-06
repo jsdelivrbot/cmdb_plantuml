@@ -1,0 +1,86 @@
+{
+  "name": "riot-cli",
+  "version": "2.3.14",
+  "description": "Riot command line utility",
+  "main": "lib/index.js",
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "bin": {
+    "riot": "lib/index.js"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riot/cli.git"
+  },
+  "keywords": [
+    "riot",
+    "cli"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.11.6",
+    "eslint": "^1.10.3",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.1",
+    "mocha": "^2.3.4"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riot/cli/issues"
+  },
+  "homepage": "https://github.com/riot/cli#readme",
+  "author": {
+    "name": "Gianluca Guarini",
+    "email": "gianluca.guarini@gmail.com",
+    "url": "http://gianlucaguarini.com/"
+  },
+  "gitHead": "d1aef430facdb2493f0b3992d664a901a6d037c7",
+  "_id": "riot-cli@2.3.14",
+  "_shasum": "c61b35fb0602ed2d6a4c71183bb4a2a0264c6370",
+  "_from": ".",
+  "_npmVersion": "3.5.0",
+  "_nodeVersion": "5.1.1",
+  "_npmUser": {
+    "name": "gianlucaguarini",
+    "email": "gianluca.guarini@gmail.com"
+  },
+  "dist": {
+    "shasum": "c61b35fb0602ed2d6a4c71183bb4a2a0264c6370",
+    "tarball": "http://registry.npmjs.org/riot-cli/-/riot-cli-2.3.14.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "cognitom",
+      "email": "kawamura@cognitom.com"
+    },
+    {
+      "name": "gianlucaguarini",
+      "email": "gianluca.guarini@gmail.com"
+    },
+    {
+      "name": "tipiirai",
+      "email": "tero@muut.com"
+    }
+  ],
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "chalk": "chalk@^1.1.1",
+    "chokidar": "chokidar@^1.4.1",
+    "co": "co@^4.6.0",
+    "optionator": "optionator@^0.7.1",
+    "riot-compiler": "riot-compiler@^2.3.0",
+    "rollup": "rollup@^0.21.3",
+    "shelljs": "shelljs@^0.5.3",
+    "path": "github:jspm/nodelibs-path@^0.1.0",
+    "systemjs-json": "github:systemjs/plugin-json@^0.1.0",
+    "process": "github:jspm/nodelibs-process@^0.1.0",
+    "cluster": "github:jspm/nodelibs-cluster@^0.1.0"
+  }
+}

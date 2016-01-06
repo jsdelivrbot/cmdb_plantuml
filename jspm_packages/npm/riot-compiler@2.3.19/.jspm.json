@@ -1,0 +1,86 @@
+{
+  "name": "riot-compiler",
+  "version": "2.3.19",
+  "description": "Compiler for riot .tag files",
+  "main": "dist/compiler.js",
+  "jsnext:main": "dist/es6.compiler.js",
+  "files": [
+    "lib",
+    "doc",
+    "dist/*.js",
+    "test/**"
+  ],
+  "scripts": {
+    "test": "make test",
+    "prepublish": "make build && node bump"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/riot/compiler.git"
+  },
+  "keywords": [
+    "riot",
+    "virtualdom",
+    "tag",
+    "compiler"
+  ],
+  "devDependencies": {
+    "coveralls": "^2.11.4",
+    "eslint": "^1.10.3",
+    "expect.js": "^0.3.1",
+    "istanbul": "^0.4.1",
+    "jspreproc": "^0.2.5",
+    "mocha": "^2.3.4"
+  },
+  "author": {
+    "name": "Muut, Inc. and other contributors"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/riot/compiler/issues"
+  },
+  "homepage": "https://github.com/riot/compiler#readme",
+  "gitHead": "9fc6461ab33765864265c8ed795e5a7820e5b485",
+  "_id": "riot-compiler@2.3.19",
+  "_shasum": "df20ca3896a095cfac446b7a2a3d8f98d021f498",
+  "_from": ".",
+  "_npmVersion": "2.14.7",
+  "_nodeVersion": "4.2.3",
+  "_npmUser": {
+    "name": "amarcruz",
+    "email": "amarcruz@yahoo.com"
+  },
+  "dist": {
+    "shasum": "df20ca3896a095cfac446b7a2a3d8f98d021f498",
+    "tarball": "http://registry.npmjs.org/riot-compiler/-/riot-compiler-2.3.19.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "amarcruz",
+      "email": "amarcruz@yahoo.com"
+    },
+    {
+      "name": "cognitom",
+      "email": "kawamura@cognitom.com"
+    },
+    {
+      "name": "gianlucaguarini",
+      "email": "gianluca.guarini@gmail.com"
+    },
+    {
+      "name": "tipiirai",
+      "email": "tero@muut.com"
+    }
+  ],
+  "format": "cjs",
+  "ignore": [
+    "node_modules"
+  ],
+  "registry": "npm",
+  "dependencies": {
+    "path": "github:jspm/nodelibs-path@^0.1.0",
+    "fs": "github:jspm/nodelibs-fs@^0.1.0",
+    "process": "github:jspm/nodelibs-process@^0.1.0",
+    "buffer": "github:jspm/nodelibs-buffer@^0.1.0"
+  }
+}

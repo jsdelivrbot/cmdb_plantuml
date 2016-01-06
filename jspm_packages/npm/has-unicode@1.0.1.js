@@ -1,0 +1,1 @@
+module.exports = require("npm:has-unicode@1.0.1/index");

@@ -1,0 +1,1 @@
+module.exports = require("npm:simple-dom@0.2.7/dist/simple-dom");

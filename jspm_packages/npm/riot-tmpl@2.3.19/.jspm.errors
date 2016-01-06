@@ -1,0 +1,3 @@
+/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/dist/es6.tmpl.js:412:1: Unexpected reserved word export,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/dist/es6.tmpl.js:412:8: Semi-colon expected,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/dist/es6.tmpl.js:412:8: Unexpected reserved word default,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/dist/es6.tmpl.js:412:16: Semi-colon expected
+
+/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/lib/index.js:44:1: Unexpected reserved word export,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/lib/index.js:44:8: Semi-colon expected,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/lib/index.js:44:8: Unexpected reserved word default,/home/john/.jspm/packages/npm/riot-tmpl@2.3.19/lib/index.js:44:16: Semi-colon expected
