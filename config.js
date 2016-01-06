@@ -1,5 +1,5 @@
 System.config({
-  "baseURL": "/",
+  "baseURL": "/cmdb_plantuml/",
   "transpiler": "babel",
   "babelOptions": {
     "optional": [
