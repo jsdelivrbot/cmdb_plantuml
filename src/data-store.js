@@ -11,7 +11,6 @@ export default function DataStore() {
 
   this.initStore = () => {
     let config = `
-
 DMP	calls	Origin Services	Frontend
 DSP	calls	Nginx	Frontend
 Origin Services	includes	Company Service	Front backend
@@ -23,17 +22,13 @@ Nginx	exposes	Fuel Services	Front backend
 Nginx	exposes	Analytics Services	Front backend
 Nginx	serves	DSP	Front backend
 Baogao	includes	Currency Service	Backend services
-Currency Service			Backend services
-RBAC Service			Backend services
 Company Service	calls	RBAC Service	Backend services
 Users Service	calls	RBAC Service	Backend services
 Metrics Service	calls	RBAC Service	Backend services
 Metrics Service	has database	Reports Vertica	Backend services
 Metrics Service	has database	Reports MySQL	Backend services
 Company Service	has database	Master Oracle	Backend services
-Company Service	has database	Master MySQL	Backend services
-Currency Service	has database	Reports Vertica	Backend services
-Currency Service	has database	Reports MySQL	Backend services
+Currency Service	has database	Reports database	Backend services
 Auth	includes	Okta Auth	Frontend
 Auth	includes	Google Auth	Frontend
 DMP	redirects to	Okta Auth	Frontend
@@ -43,6 +38,30 @@ Master database	includes	Master MySQL	Databases
 Master database	includes	Master Oracle	Databases
 Reports database	includes	Reports Vertica	Databases
 Reports database	includes	Reports MySQL	Databases
+RBAC Service	has database	Master MySQL	Front backend
+Master MySQL	replicates	Master Oracle	Databases
+Users Service	has database	Master Oracle	Databases
+DSP	calls	Origin Services	Frontend
+Labs database			Databases
+Modeling database			Databases
+Pixel Crawler database			Databases
+Hive database	includes	Hive lsv	Databases
+Hive database	includes	Hive inw	Databases
+Analytics Services	includes	Custom query service	Front backend
+Custom query service	has database	Hive database	Front backend
+Custom query service	has database	Reports database	Front backend
+Fuel Services	includes	Web Crawl service	Front backend
+Web Crawl service	has database	Pixel Crawler database	Front backend
+Custom query CRUD	has database	Master MySQL	Front backend
+Fuel Services	includes	Custom query CRUD	Front backend
+Fuel Services	includes	Insights service	Front backend
+Insights service	has database	Modeling database	Front backend
+Modeling service	has database	Modeling database	Front backend
+Analytics Services	includes	Modeling service	Front backend
+CompanyCampaignLineItemTactic Service	calls	Restriction service	Front backend
+Restriction service	has database	Master MySQL	Backend services
+Fuel Services	includes	CompanyCampaignLineItemTactic Service	Front backend
+CompanyCampaignLineItemTactic Service	has database	Master MySQL	Front backend
 `;
     this.updateData(config);
   };
